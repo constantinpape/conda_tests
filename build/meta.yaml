@@ -1,0 +1,22 @@
+package:
+    name: conda_test
+    version: 1.0
+
+source:
+    path: ..
+
+build:
+    number: 1
+    string: py_{{PKG_BUILDNUM}}
+
+requirements:
+    build:
+        - python 2.7*
+    
+    run:
+        - python 2.7*
+        - numpy 1.12 # This is not a valid numpy version !
+
+tests:
+    imports:
+        - py_src
