@@ -21,3 +21,6 @@ This fails with:
 ```
 PackageNotFoundError: Package not found: Conda could not find '
 ```
+
+See also this conda issue:
+https://github.com/conda/conda-build/issues/1880
