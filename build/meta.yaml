@@ -7,16 +7,15 @@ source:
 
 build:
     number: 1
-    string: py_{{PKG_BUILDNUM}}
 
 requirements:
     build:
-        - python 2.7*
-    
+        - python
+
     run:
-        - python 2.7*
+        - python
         - numpy 1.12 # This is not a valid numpy version !
 
-tests:
+test:
     imports:
         - py_src
